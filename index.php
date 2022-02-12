@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html lang="tr">
+
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="wrapper">
-
         <div id="html_div">
             <form action="generatePdf.php" method="post">
                 <input type="text" name="name" placeholder="Enter Name">
