@@ -18,5 +18,8 @@ if (isset($_POST['submit_val'])) {
     $dompdf->setPaper('A4');
     $dompdf->render();
     $dompdf->stream("", array("Attachment" => false));
-    exit(0);
+    $output = $dompdf->output();
+    $path = 'pdfs/' . rand() . '.pdf';
+    file_put_contents($path, $output);
+    header("Location:index.php");
 }
